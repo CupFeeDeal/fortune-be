@@ -1,2 +1,2 @@
 # fortune-be
-Forune service MVP ver1.0 backend repository
+Fortune service MVP ver1.0 backend repository
