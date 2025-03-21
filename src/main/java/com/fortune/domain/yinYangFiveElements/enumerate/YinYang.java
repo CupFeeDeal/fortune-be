@@ -6,7 +6,8 @@ import lombok.ToString;
 @Getter
 @ToString
 public enum YinYang {
-    YIN("음"), YANG("양");
+    YIN("음"),
+    YANG("양");
 
     private final String description;
 

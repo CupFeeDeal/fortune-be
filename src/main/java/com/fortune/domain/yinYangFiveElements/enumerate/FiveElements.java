@@ -6,7 +6,11 @@ import lombok.ToString;
 @Getter
 @ToString
 public enum FiveElements {
-    WOOD("목"), FIRE("화"), EARTH("토"), METAL("금"), WATER("수");
+    WOOD("목"),
+    FIRE("화"),
+    EARTH("토"),
+    METAL("금"),
+    WATER("수");
 
     private final String description;
 
