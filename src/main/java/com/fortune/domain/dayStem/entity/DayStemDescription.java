@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class DayStemDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "day_stem_id")
+    @Column(name = "day_stem_description_id")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
