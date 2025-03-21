@@ -1,4 +1,4 @@
-package com.fortune.domain.stemBranch.entity;
+package com.fortune.domain.dayStem.entity;
 
 import com.fortune.domain.yinYangFiveElements.entity.YinYangFIveElements;
 import jakarta.persistence.*;
@@ -9,19 +9,28 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public class StemBranch {
+public class DayStemDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "stem_branch_id")
+    @Column(name = "day_stem_id")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "yin_yang_five_elements_id")
-    private YinYangFIveElements yinYangFiveElements;
+    @JoinColumn(name = "day_stem_id")
+    private YinYangFIveElements dayStem;
 
     @Column(nullable = false)
-    private String chineseName;
+    private String nickname;
 
-    @Column(nullable = false)
-    private String koreanName;
+    @Column
+    private String description1;
+
+    @Column
+    private String description2;
+
+    @Column
+    private String description3;
+
+    @Column
+    private String description4;
 }

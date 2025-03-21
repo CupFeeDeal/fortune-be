@@ -1,4 +1,4 @@
-package com.fortune.domain.dayStem.entity;
+package com.fortune.domain.heavenlyStemsEarthlyBranches.entity;
 
 import com.fortune.domain.yinYangFiveElements.entity.YinYangFIveElements;
 import jakarta.persistence.*;
@@ -9,28 +9,19 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public class DayStem {
+public class HeavenlyStemsEarthlyBranches {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "day_stem_id")
+    @Column(name = "stem_branch_id")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "day_stem_id")
-    private YinYangFIveElements dayStem;
+    @JoinColumn(name = "yin_yang_five_elements_id")
+    private YinYangFIveElements yinYangFiveElements;
 
     @Column(nullable = false)
-    private String nickname;
+    private String chineseName;
 
-    @Column
-    private String description1;
-
-    @Column
-    private String description2;
-
-    @Column
-    private String description3;
-
-    @Column
-    private String description4;
+    @Column(nullable = false)
+    private String koreanName;
 }
