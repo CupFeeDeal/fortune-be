@@ -1,6 +1,6 @@
-package com.fortune.domain.tenGodsRelationship.entity;
+package com.fortune.domain.tenGods.entity;
 
-import com.fortune.domain.tenGodsRelationship.enumerate.TenGodsRelationship;
+import com.fortune.domain.tenGods.enumerate.TenGodsRelationship;
 import com.fortune.domain.yinYangFiveElements.entity.YinYangFIveElements;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
